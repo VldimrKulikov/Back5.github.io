@@ -9,7 +9,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log-in</title>
+  <title>Login</title>
 </head>
 <body>
 <?php 
@@ -21,9 +21,10 @@
 ?>
 </div>
 <form action="" method="post">
-  <p <?php  if ($errors['login']) print 'class="error"'?>>login:</p>
+  <h1>Вход</h1>
+  <p <?php  if ($errors['login']) print 'class="error"'?>>Логин</p>
   <input name="login">
-  <p <?php  if ($errors['password']) print 'class="error"'?>>password:</p>
+  <p <?php  if ($errors['password']) print 'class="error"'?>>Пароль</p>
   <input name="password" type="password">
   <input type="submit" value="Войти">
   </form>
